@@ -27,6 +27,9 @@
                                                 (("key" . (("ack" . 1)))
                                                  ("name" . "ack_index")
                                                  ("unique" . t)
+                                                 ("sparse" . t))
+                                                (("key" . (("reason" . 1)))
+                                                 ("name" . "reason_index")
                                                  ("sparse" . t))))))))
     (values (not (= (gethash "ok" result) 0)) result)))
 
